@@ -113,7 +113,7 @@
     <script>
       $(document).ready(function() {
         var data1 = [
-          [gd(2012, 1, 1), 17],
+          [gd(2012, 1, 1), 90],
           [gd(2012, 1, 2), 74],
           [gd(2012, 1, 3), 6],
           [gd(2012, 1, 4), 39],
@@ -131,8 +131,18 @@
           [gd(2012, 1, 6), 6],
           [gd(2012, 1, 7), 9]
         ];
+
+                var data3 = [
+                  [gd(2012, 1, 1), 10],
+                  [gd(2012, 1, 2), 20],
+                  [gd(2012, 1, 3), 70],
+                  [gd(2012, 1, 4), 50],
+                  [gd(2012, 1, 5), 45],
+                  [gd(2012, 1, 6), 55],
+                  [gd(2012, 1, 7), 30]
+                ];
         $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
-          data1, data2
+          data1
         ], {
           series: {
             lines: {
@@ -159,7 +169,7 @@
             borderWidth: 1,
             color: '#fff'
           },
-          colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+          colors: ["rgba(38, 185, 154, 0.38)", "rgba(15, 50, 106, 0.44)"],
           xaxis: {
             tickColor: "rgba(51, 51, 51, 0.06)",
             mode: "time",
@@ -227,6 +237,6 @@
       });
     </script>
     <!-- /Doughnut Chart -->
-	
+
   </body>
 </html>
